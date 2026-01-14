@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mindful Browsing</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Mindful Browsing</h1>
+      <p>Stay focused, one check at a time.</p>
+    </header>
+
+    <div class="settings-group">
+      <div class="setting-item">
+        <label for="checkInInterval">Check-in Interval (min)</label>
+        <input type="number" id="checkInInterval" min="1" value="15">
+      </div>
+
+      <div class="setting-item toggle-item">
+        <label for="hardBlockMode">Hard Block Mode</label>
+        <label class="switch">
+          <input type="checkbox" id="hardBlockMode">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="watchlist-section">
+      <h2>Exception List</h2>
+      <div class="input-group">
+        <input type="text" id="newSiteInput" placeholder="e.g., google.com">
+        <button id="addSiteBtn">Add</button>
+      </div>
+      <ul id="exceptionList">
+        <!-- Sites will be added here dynamically -->
+      </ul>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>
