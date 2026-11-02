@@ -2,14 +2,14 @@
 
 Mindful Browsing helps you stay focused by monitoring your web activity and interrupting you with a "Reality Check" after a set interval. It encourages mindful usage of the web without being overly restrictive.
 
-## features
+## Features
 
-- **Universal Monitoring**: Monitors all websites by default to ensure you stay on track.
+- **Web Page Monitoring**: Monitors active HTTP and HTTPS tabs unless they match the exception list. Browser-internal pages are excluded.
 - **Exception List**: Add specific websites (e.g., productivity tools, research sites) to an "Exception List" to bypass monitoring.
 - **Reality Checks**: After a configurable time interval (default: 15 mins), an overlay appears asking if you are being productive.
-    - **"I'm Working"**: Dismisses the check and resets the timer.
+    - **"I'm Working / Studying"**: Dismisses the check and resets the timer.
     - **"I'm Wasting Time"**: Closes the tab.
-- **Hard Block Mode**: Optionally enable strictly blocking access to non-exception sites instead of just asking.
+- **Hard Block Mode**: Shows a blocking overlay on non-exception sites instead of a timed check-in.
 - **Privacy First**: All data (settings, lists) is stored locally in your browser (`chrome.storage.local`). No data is sent to external servers.
 
 ## Installation
@@ -25,7 +25,7 @@ Mindful Browsing helps you stay focused by monitoring your web activity and inte
 1. Click the extension icon in the toolbar.
 2. **Exception List**: Add domains you want to *exclude* from monitoring (e.g., `google.com`, `wikipedia.org`).
 3. **Check-in Interval**: Set how many minutes you can browse monitored sites before a check-in.
-4. **Hard Block Mode**: Toggle this on if you want to be completely blocked from non-exception sites.
+4. **Hard Block Mode**: Toggle this on to show the blocking overlay immediately on non-exception sites.
 
 ## License
 
